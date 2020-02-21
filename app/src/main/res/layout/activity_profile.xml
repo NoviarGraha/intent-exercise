@@ -18,8 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.25"
-            />
+            app:layout_constraintGuide_percent="0.35" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/image_profile"
@@ -28,7 +27,6 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/profile_picture"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.545"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
@@ -52,7 +50,7 @@
         <TextView
             android:id="@+id/label_about"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -61,7 +59,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_about"
-            tools:text="I think this is one of the most important qualities to have as a driver: Show responsibility for other traffic participants."
             />
 
         <View
@@ -86,7 +83,7 @@
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Fullname"
             android:textAlignment="textStart"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/separator1"
@@ -100,11 +97,10 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/futura_pt_demibold"
             android:textAlignment="textEnd"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@id/separator1"
-            tools:text="Jonathan Doe"
             />
 
         <View
@@ -129,7 +125,7 @@
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Email"
             android:textAlignment="textStart"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/separator2"
@@ -143,11 +139,10 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/futura_pt_demibold"
             android:textAlignment="textEnd"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@id/separator2"
-            tools:text="jonathan.designer@gmail.com"
             />
 
         <View
@@ -170,9 +165,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:text="Email"
+            android:text="Homepage"
             android:textAlignment="textStart"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/separator3"
@@ -186,11 +181,10 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/futura_pt_demibold"
             android:textAlignment="textEnd"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@id/separator3"
-            tools:text="jonathan.designer.com"
             />
 
         <View
@@ -209,6 +203,7 @@
         <Button
             android:id="@+id/button_homepage"
             android:layout_width="0dp"
+            android:onClick="handleHompage"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
